@@ -47,7 +47,7 @@ namespace saleswebmvccore.Controllers
         {
             if (id == null)
             {
-                return RedirectToAction(nameof(Error), new { message = "Id not provided"});
+                return RedirectToAction(nameof(Error), new { message = "Id not provided" });
             }
 
             var obj = _sellerService.FindById(id.Value);
@@ -135,5 +135,4 @@ namespace saleswebmvccore.Controllers
             return View(viewModel);
         }
     }
-
 }
